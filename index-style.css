@@ -14,5 +14,31 @@ div.absolute {
     position: absolute;
     right: 10px;
     z-index: -1;
+    border-style: solid;
+    border-color: mediumseagreen;
+    border-width: 15px; 
+}
+
+h2 {
+	background-color: MediumSeaGreen;
+	width: 400px;
+}
+
+a {
+	text-decoration: none !important;
+}
+a:link {
+	color: white;
+	text-underline-position: none;
+}
+
+a:visted {
+	color: white;
+	text-underline-position: none;
+}
+
+a:hover {
+	color: plum;
+	text-underline-position: none;
 }
 
