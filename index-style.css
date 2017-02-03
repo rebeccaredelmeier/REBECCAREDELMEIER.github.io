@@ -1,0 +1,18 @@
+p {
+	border-style: solid;
+	border-top-width: 15px;
+}
+
+body{
+	background-color: black;
+	font-size: 20px;
+	font-family: helvetica;
+	color: white;
+}
+
+div.absolute {
+    position: absolute;
+    right: 10px;
+    z-index: -1;
+}
+
