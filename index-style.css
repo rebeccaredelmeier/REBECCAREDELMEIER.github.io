@@ -1,6 +1,7 @@
 p {
 	border-style: solid;
 	border-top-width: 15px;
+	border-top-color: white;
 }
 
 
@@ -23,6 +24,7 @@ div.absolute {
 h2 {
 	background-color: MediumSeaGreen;
 	width: 400px;
+	padding-left: 10px;
 }
 
 a {
@@ -32,16 +34,14 @@ a {
 
 a:link {
 	color: white;
-	text-underline-position: none;
 }
 
-a:visted {
+a:visited {
 	color: white;
-	text-underline-position: none;
 }
 
 a:hover {
 	color: plum;
-	text-underline-position: none;
 }
+
 
