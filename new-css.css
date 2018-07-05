@@ -14,11 +14,16 @@ a:visited {
 /* The "show" class is added to the filtered elements */
 .show {
     display: inline-block;
-    min-height: 400px;
+    min-height: 410px;
+    max-height: 410px;
 }
 
 .container {
     overflow: hidden;
+}
+
+img { 
+   border:6px solid #f1f1f1;
 }
 
 

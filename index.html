@@ -6,6 +6,8 @@
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-colors-flat.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-colors-2017.css">
 <link href="new-css.css" rel="stylesheet" type="text/css"> </script>
 
 <style>
@@ -14,7 +16,7 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
 <body class="w3-light-grey w3-content" style="max-width:1600px">
 
 <!-- Sidebar/menu -->
-<nav class="w3-sidebar w3-collapse w3-white w3-animate-left" style="z-index:3;width:300px;" id="mySidebar"><br>
+<nav class="w3-sidebar w3-collapse w3-yellow w3-animate-left" style="z-index:3;width:300px;" id="mySidebar"><br>
   <div class="w3-container">
     <a href="#" onclick="w3_close()" class="w3-hide-large w3-right w3-jumbo w3-padding w3-hover-grey" title="close menu">
       <i class="fa fa-remove"></i>
@@ -29,13 +31,15 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
     <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-user fa-fw w3-margin-right"></i>ABOUT</a> 
     <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-envelope fa-fw w3-margin-right"></i>CONTACT</a>
   </div>
-  <div class="w3-panel w3-large w3-display-bottomleft">
+  <div class="w3-panel w3-display-bottomleft">
     <a href="https://www.linkedin.com/in/rebecca-redelmeier-890391114/"> 
         <i class="fa fa-linkedin w3-hover-opacity"></i>
     </a>
+    &emsp;
     <a href="https://twitter.com/RRedelmeier">
-       <i class="fa fa-twitter w3-hover-opacity"></i>
+       <i class="fa fa-twitter w3-large w3-hover-opacity"></i>
     </a>
+    &emsp;
     <a href="https://github.com/rebeccaredelmeier">
       <i class="fa fa-github w3-hover-opacity"></i>
     </a>
@@ -47,11 +51,11 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
 <div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
 
 <!-- !PAGE CONTENT! -->
-<div class="w3-main" style="margin-left:300px">
+<div class="w3-main w3-white" style="margin-left:300px">
 
 <!-- Contact Section -->
-  <div class="w3-container w3-padding-large">
-    <h4 id="home"><b>Welcome to my site!</b></h4>
+  <div class="w3-container w3-padding-large" id="home">
+    <h4><b>Welcome to my site!</b></h4>
     <div class="w3-row-padding w3-center w3-padding-24" style="margin:0 -16px">
       <div class="w3-third w3-dark-grey">
         <p><i class="fa fa-envelope w3-xxlarge w3-text-light-grey"></i></p>
@@ -100,7 +104,9 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
       <button class="btn active w3-button w3-black" onclick="filterSelection('all')">ALL</button>
       <button class="btn w3-button w3-white" onclick="filterSelection('international')"><i class="fa fa-globe w3-margin-right"></i>International</button>
       <button class="btn w3-button w3-white w3-hide-small" onclick="filterSelection('data')"><i class="fa fa-area-chart w3-margin-right"></i>Data Journalism</button>
+       <button class="btn w3-button w3-white w3-hide-small" onclick="filterSelection('radio')"><i class="fa fa-microphone w3-margin-right"></i>Radio</button>
       <button class="btn w3-button w3-white w3-hide-small" onclick="filterSelection('environment')"><i class="fa fa-pagelines w3-margin-right"></i>Environment</button>
+      <button class="btn w3-button w3-white w3-hide-small" onclick="filterSelection('justice')"><i class="fa fa-balance-scale w3-margin-right"></i>Social Justice</button>
     </div>
     </div>
   </header>
@@ -113,7 +119,7 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
       <a href="http://www.newswhip.com/2018/07/hashtags-on-social/" target="_blank">
       <img src="http://18fag63b13jl15ixjnku6apw.wpengine.netdna-cdn.com/wp-content/uploads/2018/06/Screen-Shot-2018-06-25-at-3.25.03-PM-768x426.png" alt="conference" style="width:100%" class="w3-hover-opacity">
       </a>
-      <div class="w3-container w3-white">
+      <div class="w3-container w3-light-grey">
         <h5 class =bold><b>Hashtags on social: What you need to know</b></h5>
         <div class=w3-tiny> NewsWhip, 2 July 2018</div>
         <p><div class=w3-small>Playing the platform is essential when making hashtag decisions. In this report, we dive into how different hashtag strategies can help generate engagement on across social...</div></p>
@@ -123,7 +129,7 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
       <a href="https://www.dailymaverick.co.za/article/2018-05-10-when-trees-are-all-youve-got-for-title-deeds/#.Wz1HZNgzrOQ" target="_blank">
        <img src="https://37ugp72ofspp25ltkb3ajwvg-wpengine.netdna-ssl.com/wp-content/uploads/becca-erf81-MAIN-ld-1600x1067.jpg" alt="Trees" style="width:100%" class="w3-hover-opacity">
       </a>
-      <div class="w3-container w3-white">
+      <div class="w3-container w3-light-grey">
         <h5 class =bold><b>When trees are all you've got for title deeds</b></h5>
         <div class=w3-tiny>Daily Maverick, 10 May 2018</div>
         <p>
@@ -135,7 +141,7 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
       <a href="https://www.dailymaverick.co.za/article/2018-05-03-media-freedom-in-the-age-of-falsehoods/#.Wz1Rg9gzrOQ" target="_blank">
       <img src="https://37ugp72ofspp25ltkb3ajwvg-wpengine.netdna-ssl.com/wp-content/uploads/becca-pressfreedom.jpg" alt="Media Freedom" style="width:100%" class="w3-hover-opacity">
       </a>
-      <div class="w3-container w3-white">
+      <div class="w3-container w3-light-grey">
         <h5 class =bold><b>Media freedom in the Age of Falsehoods</b></h5>
         <div class=w3-tiny> Daily Maverick, 3 May 2018</div>
         <p><div class=w3-small>Thursday 3 May marks International Press Freedom Day – a celebration of the work that journalists do worldwide to hold people in power accountable and empower citizens...</div></p>
@@ -145,31 +151,81 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
   
   <!-- Second Photo Grid-->
 
-    <div class="w3-third w3-container filterDiv international">
+    <div class="w3-third w3-container w3-margin-bottom filterDiv international">
      <a href="https://www.dailymaverick.co.za/article/2018-04-16-youth-unemployment-in-focus-when-youre-job-hunting-so-long-that-youre-no-longer-young/#.Wz19pNgzrOQ" target="_blank">
       <img src="https://37ugp72ofspp25ltkb3ajwvg-wpengine.netdna-ssl.com/wp-content/uploads/marelise-unemploymentMAIN-1.jpg" alt="youth" style="width:100%" class="w3-hover-opacity">
     </a>
-      <div class="w3-container w3-white">
+      <div class="w3-container w3-light-grey">
         <h5 class=bold><b>Youth Unemployment in Focus: When you’re job-hunting so long that you’re no longer young</b></h5>
         <div class=w3-tiny> Daily Maverick, 20 April 2018</div>
         <p><div class=w3-small>South Africa has a serious unemployment problem, particularly among young people...</div></p>
       </div>
     </div>
-    <div class="w3-third w3-container filterDiv international">
+    <div class="w3-third w3-container w3-margin-bottom filterDiv international environment">
+      <a href="https://www.groundup.org.za/article/masiphumeleles-wetlands-shackdwellers-dread-winter/" target="_blank">
+       <img src="https://www.groundup.org.za/media/_versions/images/Third%20Party/MasiphumeleleWetland_extra_large.jpg" alt="Masi" style="width:100%" class="w3-hover-opacity">
+      </a>
+      <div class="w3-container w3-light-grey">
+        <h5 class =bold><b>In Masiphumelele’s wetlands, everyone dreads the winter</b></h5>
+        <div class=w3-tiny> GroundUp, 18 April 2018</div>
+        <p><div class=w3-small> Shackdwellers fear they’ll be sidelined by City housing plans...</div></p>
+      </div>
+    </div>
+    <div class="w3-third w3-container w3-margin-bottom filterDiv international justice">
      <a href="https://www.dailymaverick.co.za/article/2018-04-20-no-such-thing-as-a-free-lunch-for-cape-towns-homeless-youth/#.Wz1-p9gzrOQ" target="_blank">
       <img src="https://37ugp72ofspp25ltkb3ajwvg-wpengine.netdna-ssl.com/wp-content/uploads/photo1-soupkitchen-1600x927.jpg" alt="homeless" style="width:100%" class="w3-hover-opacity">
     </a>
-      <div class="w3-container w3-white">
+      <div class="w3-container w3-light-grey">
         <h5 class=bold><b>No such thing as a free lunch for Cape Town’s homeless</b></h5>
         <div class=w3-tiny> Daily Maverick, 16 April 2018</div>
         <p><div class=w3-small>Three youths wait, hungry, on the stoep of The Service Dining Rooms. As Cape Town bustles around them, they stand mostly still, stuck in the limbo of the line that snakes along the sidewalk...</div></p>
       </div>
     </div>
-    <div class="w3-third w3-container filterDiv">
+    <div class="w3-third w3-container w3-margin-bottom filterDiv justice">
+      <a href="https://www.groundup.org.za/article/controversial-land-deal-comes-back-haunt-hermanus/" target="_blank">
+       <img src="https://www.groundup.org.za/media/_versions/images/photographers/Ashraf%20Hendricks/20180328%20Hermanus/Hermanus-2239HR_extra_large.jpg" alt="Hermanus" style="width:100%" class="w3-hover-opacity">
+      </a>
+      <div class="w3-container w3-light-grey">
+        <h5 class =bold><b>Controversial land deal comes back to haunt Hermanus</b></h5>
+        <div class=w3-tiny> GroundUp, 28 March 2018</div>
+        <p><div class=w3-small> Government promises protesters a piece of Schulphoek land...</div></p>
+      </div>
+    </div>
+    <div class="w3-third w3-container w3-margin-bottom filterDiv radio environment">
+      <a href="https://loe.org/shows/segments.html?programID=18-P13-00008&segmentID=4" target="_blank">
+       <img src="https://loe.org/content/2018-02-23/EROSION-aerial_photo_bluff_with_lighthouse.jpg" alt="Bluff" style="width:100%" class="w3-hover-opacity">
+      </a>
+      <div class="w3-container w3-light-grey">
+        <h5 class =bold><b>As Sea Levels Rise, Nantucket Shores Up Crumbling Beaches</b></h5>
+        <div class=w3-tiny> Living on Earth 23 February 2018</div>
+        <p><div class=w3-small> Erosion and rising seas are threatening some of Nantucket's most expensive real estate...</div></p>
+      </div>
+    </div>
+     <div class="w3-third w3-container w3-margin-bottom filterDiv radio environment">
+      <a href="http://www.loe.org/shows/segments.html?programID=17-P13-00031&segmentID=4" target="_blank">
+       <img src="http://www.timberpress.com/blog/wp-content/uploads/2017/05/073_0801_Deer_in_Fire_Credit_USFS_JohnMcColganREJ.jpg" alt="Fire" style="width:100%" class="w3-hover-opacity">
+      </a>
+      <div class="w3-container w3-light-grey">
+        <h5 class =bold><b>Land On Fire</b></h5>
+        <div class=w3-tiny> Living on Earth, 4 August 2017</div>
+        <p><div class=w3-small> The impact, devastation, and cost of forest fires in America’s West has multiplied in recent decades...</div></p>
+      </div>
+    </div>
+    <div class="w3-third w3-container w3-margin-bottom filterDiv data">
+      <a href="https://tuftsdaily.com/features/2017/04/06/tufts-by-numbers-will-the-tuition-bubble-ever-be-burst/" target="_blank">
+       <img src="https://cdn.tuftsdaily.com/2017/04/Tuition-Hikes-Web-3-938x535.jpg" alt="Graph" style="width:100%" class="w3-hover-opacity">
+      </a>
+      <div class="w3-container w3-light-grey">
+        <h5 class =bold><b>Tufts by Numbers: Will the tuition bubble ever be burst?</b></h5>
+        <div class=w3-tiny> Tufts Daily News, 6 April 2017</div>
+        <p><div class=w3-small> As costs for college climb steadily upwards, will they ever hit a ceiling? </div></p>
+      </div>
+    </div>
+    <div class="w3-third w3-container w3-margin-bottom filterDiv justice">
       <a href="https://tuftsdaily.com/features/2016/12/12/national-discourse-on-sanctuary-campuses-where-does-tufts-fit-in/" target="_blank">
        <img src="https://cdn.tuftsdaily.com/2016/12/2016-11-16-Walk-Out-173155-938x535.jpg" alt="Protest" style="width:100%" class="w3-hover-opacity">
       </a>
-      <div class="w3-container w3-white">
+      <div class="w3-container w3-light-grey">
         <h5 class =bold><b>National discourse on sanctuary campuses: Where does Tufts fit in?</b></h5>
         <div class=w3-tiny> Tufts Daily News, 12 December 2016</div>
         <p><div class=w3-small> Since Election Day, almost 200 sanctuary campus petitions have emerged nationwide, according to Xavier Maciel, a first-year transfer student at Pomona College...</div></p>
