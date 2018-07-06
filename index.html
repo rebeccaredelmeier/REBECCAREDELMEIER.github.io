@@ -18,12 +18,12 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Merriweather", sans-serif}
 <body class="w3-light-grey w3-content" style="max-width:1600px">
 
 <!-- Sidebar/menu -->
-<nav class="w3-sidebar w3-collapse w3-white w3-hover-light-grey w3-animate-left" style="z-index:3;width:300px;" id="mySidebar"><br>
+<nav class="w3-sidebar w3-collapse w3-yellow w3-animate-left" style="z-index:3;width:300px;" id="mySidebar"><br>
 	<div class="w3-container">
 		<a href="#" onclick="w3_close()" class="w3-hide-large w3-right w3-jumbo w3-padding w3-hover-grey" title="close menu">
 			<i class="fa fa-remove"></i>
 		</a>
-		<h4><b>REBECCA REDELMEIER</b></h4>
+		<h4 class="w3-text-black"><b>REBECCA REDELMEIER</b></h4>
 		<p class="w3-text-grey">JOURNALIST & DATA WRANGLER</p>
 	</div>
 
@@ -67,40 +67,12 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Merriweather", sans-serif}
 
 <!-- Contact Section -->
 <section class="target" id="home">
-	<div class="w3-container w3-padding-large">
-		<h4><b>Welcome to my site!</b></h4>
-		<div class="w3-row-padding w3-center w3-padding-24" style="margin:0 -16px">
-			<div class="w3-third w3-dark-grey">
-				<p><i class="fa fa-envelope w3-xxlarge w3-text-light-grey"></i></p>
-				<p>beccared97@gmail.com</p>
-			</div>
-			<div class="w3-third w3-teal">
-				<p><i class="fa fa-map-marker w3-xxlarge w3-text-light-grey"></i></p>
-				<p>Boston, US // Toronto, Canada</p>
-			</div>
-			<div class="w3-third w3-dark-grey">
-				<p><i class="fa fa-phone w3-xxlarge w3-text-light-grey"></i></p>
-				<p>781-957-8794</p>
-			</div>
+	<div class="w3-container full_screen w3-light-grey">
+		<div class="full_screen">
+		<h4 class="w3-display-middle"><b>Welcome to my site!</b></h4>
 		</div>
-		<hr class="w3-opacity">
-		<form action="/action_page.php" target="_blank">
-			<div class="w3-section">
-				<label>Name</label>
-				<input class="w3-input w3-border" type="text" name="Name" required>
-			</div>
-			<div class="w3-section">
-				<label>Email</label>
-				<input class="w3-input w3-border" type="text" name="Email" required>
-			</div>
-			<div class="w3-section">
-				<label>Message</label>
-				<input class="w3-input w3-border" type="text" name="Message" required>
-			</div>
-			<button type="submit" class="w3-button w3-black w3-margin-bottom"><i class="fa fa-paper-plane w3-margin-right"></i>Send Message</button>
-		</form>
 	</div>
-	</section>
+</section>
 
 
 	<!-- Header -->
@@ -126,7 +98,7 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Merriweather", sans-serif}
 	
 	<!-- First Photo Grid-->
 
-	<div class="container">
+	<div class="container most_screen">
 
 		 <div class="w3-third w3-container filterDiv data">
 			<a href="http://www.newswhip.com/2018/07/hashtags-on-social/" target="_blank">
@@ -167,7 +139,7 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Merriweather", sans-serif}
 		<div class="w3-third w3-container w3-margin-bottom filterDiv international">
 		 <a href="https://www.dailymaverick.co.za/article/2018-04-16-youth-unemployment-in-focus-when-youre-job-hunting-so-long-that-youre-no-longer-young/#.Wz19pNgzrOQ" target="_blank">
 			<img src="https://37ugp72ofspp25ltkb3ajwvg-wpengine.netdna-ssl.com/wp-content/uploads/marelise-unemploymentMAIN-1.jpg" alt="youth" style="width:100%" class="w3-hover-opacity">
-		</a>
+		    </a>
 			<div class="w3-container w3-light-grey">
 				<h5 class=bold><b>Youth Unemployment in Focus: When you’re job-hunting so long that you’re no longer young</b></h5>
 				<div class=w3-tiny> Daily Maverick, 20 April 2018</div>
@@ -247,17 +219,9 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Merriweather", sans-serif}
 
 	</div>
 
-	<!-- Pagination -->
-	<div class="w3-center w3-padding-32">
-		<div class="w3-bar">
-			<a href="#" class="w3-bar-item w3-button w3-hover-black">«</a>
-			<a href="#" class="w3-bar-item w3-black w3-button">1</a>
-			<a href="#" class="w3-bar-item w3-button w3-hover-black">2</a>
-			<a href="#" class="w3-bar-item w3-button w3-hover-black">3</a>
-			<a href="#" class="w3-bar-item w3-button w3-hover-black">4</a>
-			<a href="#" class="w3-bar-item w3-button w3-hover-black">»</a>
-		</div>
-	</div>
+	<div class="w3-bottombar w3-margin"></div>
+
+
 </section>
 
  <section class="target" id="about">
@@ -381,7 +345,7 @@ function w3_close() {
 
 $(window).scroll(function() {
 		$('.target').each(function() {
-				if(($(window).scrollTop() + 10) >= $(this).offset().top) {
+				if(($(window).scrollTop() + 15) >= $(this).offset().top) {
 						var id = $(this).attr('id');
 						$('.nav nav a').removeClass('active_menu');
 						console.log("removing class from: " + '.nav nav a')
