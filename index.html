@@ -348,9 +348,7 @@ $(window).scroll(function() {
 				if(($(window).scrollTop() + 15) >= $(this).offset().top) {
 						var id = $(this).attr('id');
 						$('.nav nav a').removeClass('active_menu');
-						console.log("removing class from: " + '.nav nav a')
 						$('.nav nav a[href=#'+ id +']').addClass('active_menu');
-						console.log("adding class: " + '.nav nav a[href=#'+ id +']')
 				}
 		});
 });
@@ -358,7 +356,6 @@ $(window).scroll(function() {
 $('.nav nav a').on('click', function(event) {
 		$(this).parent().find('a').removeClass('active_menu');
 		$(this).addClass('active_menu');
-		console.log("active class is now: " + this);
 });
 </script>
 
