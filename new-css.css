@@ -14,8 +14,8 @@ a:visited {
 /* The "show" class is added to the filtered elements */
 .show {
     display: inline-block;
-    min-height: 410px;
-    max-height: 410px;
+    min-height: 415px;
+    max-height: 415px;
 }
 
 .container {
@@ -23,7 +23,7 @@ a:visited {
 }
 
 .active_menu {
-	color: purple;
+	color: teal;
 }
 
 .full_screen {
@@ -36,6 +36,36 @@ a:visited {
 
 img { 
    border:6px solid #f1f1f1;
+}
+
+#no_border{
+	border:0px;
+}
+
+.diff_font {
+	font-family: 'Merriweather', serif;
+}
+
+.raleway {
+	font-family: 'Fira Sans', sans-serif;
+
+}
+
+.hr {
+
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid white;
+    margin: 1em 0;
+    padding: 0; 
+}
+
+.big_margin {
+    margin-top: 30%;
+    margin-bottom: 10%;
+    margin-right: 32px;
+    margin-left: 16px;
 }
 
 
