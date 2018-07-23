@@ -68,6 +68,21 @@ img {
     margin-left: 16px;
 }
 
+.full {
+    min-height:85vh;
+}
+
+.small_bar {
+    height:15vh;
+}
+
+.text_margin {
+    margin-top: 32px;
+    margin-bottom: 16px;
+    margin-right: 16px;
+    margin-left: 16px;
+}
+
 
 
 
