@@ -105,7 +105,13 @@ a {
           width: 60%;
           margin:auto;
         }
-
+   
+   img {
+    width: 40%;
+    padding-left:10pt;
+    padding-right:10pt;
+   }
+ 
     h1 {
       padding-top: 30pt;
     }
