@@ -107,9 +107,11 @@ a {
         }
    
    img {
-    width: 80%;
+    width: 60%;
     padding-left:10pt;
     padding-right:10pt;
+    display: block; 
+    margin: auto;
    }
  
     h1 {
